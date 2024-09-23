@@ -65,7 +65,7 @@ function updateHistory(inputAmount, title) {
     const currentDate = new Date();
 
     sectionHistoryEl.innerHTML += `
-    <div class="p-2 lg:p-8 space-y-2 shadow-xl border border-blue-300 rounded-lg">
+    <div class="p-2 lg:p-8 space-y-2 shadow-xl rounded-lg">
         <h2 class="text-xl lg:text-2xl font-bold"><span>${inputAmount}</span> BDT Donated for <span>${title.innerText}</span></h2>
         <p class="text-gray-500">Date: <span>${currentDate}</span></p>
     </div>
@@ -93,6 +93,8 @@ function donateNow(input, cardBalance, title) {
     availableBalanceEl.innerText = availableBalance;
     cardBalanceAmount += inputAmount;
     cardBalance.innerText = cardBalanceAmount;
+
+    input.value = "";
 
     updateHistory(inputAmount, title);
 }
