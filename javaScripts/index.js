@@ -24,7 +24,6 @@ btnDonateEl.addEventListener("click", function () {
     sectionDonationEl.style.display = "block";
     sectionHistoryEl.style.display = "none";
 
-    // Button active state
     btnDonateEl.classList.add("btn-active", "bg-greenyellow");
     btnHistoryEl.classList.remove("btn-active", "bg-greenyellow");
 });
@@ -33,7 +32,6 @@ btnHistoryEl.addEventListener("click", function () {
     sectionDonationEl.style.display = "none";
     sectionHistoryEl.style.display = "block";
 
-    // Button active state
     btnHistoryEl.classList.add("btn-active", "bg-greenyellow");
     btnDonateEl.classList.remove("btn-active", "bg-greenyellow");
 });
@@ -67,11 +65,11 @@ function updateHistory(inputAmount, title) {
     const currentDate = new Date();
 
     sectionHistoryEl.innerHTML += `
-    <div class="p-2 lg:p-8 space-y-2 shadow-xl">
-    <h2 class="text-xl lg:text-2xl font-bold"><span>${inputAmount}</span> Taka is Donated for <span>${title.innerText}</span></h2>
-    <p class="text-gray-500">Date: <span>${currentDate}</span></p>
+    <div class="p-2 lg:p-8 space-y-2 shadow-xl border border-blue-300 rounded-lg">
+        <h2 class="text-xl lg:text-2xl font-bold"><span>${inputAmount}</span> BDT Donated for <span>${title.innerText}</span></h2>
+        <p class="text-gray-500">Date: <span>${currentDate}</span></p>
     </div>
-    `
+    `;
 }
 
 function donateNow(input, cardBalance, title) {
