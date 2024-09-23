@@ -13,6 +13,7 @@
 ## Design
 
 - **Navbar**: Create a visually appealing navbar with the following structure: ✅
+
   - Logo positioned in the middle. ✅
   - "Blog" button on the left. ✅
   - Account balance with a coin icon on the right. ✅
@@ -30,16 +31,19 @@
 ## Functionalities
 
 - **Donation and History Button Functionality**:
+
   - Clicking the "History" button will hide the donation data and display the history. ✅
   - Clicking the "Donation" button will hide the history and display the donation data. ✅
 
 - **Donation Functionality for Each Card**:
+
   - When the "Donate Now" button is clicked: ✅
     - The donation input will be deducted from the total account balance, and the updated balance will be shown. ✅
     - The card’s current donation amount will increase. ✅
     - A meaningful notification will be added to the History section. ✅
 
 - **Input Validation**:
+
   - Show an alert if invalid data is found and stop the transaction. ✅
   - Validate the donation amount: ✅
     - If the donation amount is greater than the account balance. ✅
@@ -56,6 +60,7 @@
 
 - **Sticky Navbar**: Make the navbar sticky to the top of the page. ✅
 - **Blog Page**: Create a `blog.html` file and link it to the main page: ✅
+
   - The blog page should contain 4 questions and their answers: ✅
     1. What is the Document Object Model (DOM)? ✅
     2. How do you select an element from the DOM? ✅
